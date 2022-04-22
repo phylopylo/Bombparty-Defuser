@@ -15,7 +15,6 @@ function giveHint() {
         potentialWords.push(dictionary[j]);
       }
     }
-    //parseInt(Math.random() * (potentialWords.length - 1))
     word = potentialWords[parseInt(Math.random() * (potentialWords.length - 1))];
     document.getElementById("hintHolder").innerText = "     Word is: " + word;
     lastSyllable = currentSyllable;
